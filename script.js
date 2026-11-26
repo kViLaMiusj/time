@@ -2,7 +2,7 @@ const hoursE1 = document.getElementById('hours');
 const minutesE1 = document.getElementById('minutes');
 const secondsE1 = document.getElementById('seconds');
 
-const startBth = document.getElementById('start-continue');
+const startBth = document.getElementById('stast-continue');
 const stopBtn = document.getElementById('stop');
 
 
@@ -33,7 +33,7 @@ function updateTime() {
  hoursE1.textContent = formatTime(hours);
 }
 
-startBtn.addEventListener('click', () => {
+startBth.addEventListener('click', () => {
   if (timerInterval !== null) return;
 
   timerInterval = setInterval(updateTimer, 1000);
