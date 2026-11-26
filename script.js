@@ -33,7 +33,7 @@ function updateTime() {
  hoursE1.textContent = formatTime(hours);
 }
 
-startBtn.addEventListener('click', () -> {
+startBtn.addEventListener('click', () => {
   if (timerInterval !== null) return;
 
   timerInterval = setInterval(updateTimer, 1000);
@@ -42,7 +42,7 @@ startBtn.addEventListener('click', () -> {
   startBtn.style.opacity = '1'
 });
 
-stopBtn.addEventListener('click', () -> {
+stopBtn.addEventListener('click', () => {
   if (timerInterval !== null) return;
 
   clearInterval(timerInterval);
